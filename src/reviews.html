@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+        <title>BlockReview - Reviews</title>
+	</head>
+	<body>
+		<div class = "container"> 
+			<!-- NavBar -->
+			<div class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand">Address: <span id="navbar_address"> </span></a>
+					</div>
+					<button class="btn btn-danger navbar-btn navbar-right changeAccBut" >Change account</button>
+					<ul class="nav navbar-nav navbar-brand navbar-right">
+						<li><a style="margin:0;padding:0" href="index.html">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		    <div class = "row">
+			    <div class = "col-xs-12 col-sm-8 col-sm-push-2"> 
+                    <h1 class = "text-center"> Reviews </h1>
+                    <hr/>
+                    <br/>
+			    </div>
+		    </div>
+
+			<h3>Total Reviews: <span id="revCount"></span></h3>
+        	<br>
+		    <div id = "productreviews" class = "row">
+
+		    </div>
+		</div>
+
+		<!-- Template for reviews -->
+		<div id = "reviewtemplate" style="display: none;"> 
+			<div class="col-md-12">
+       			<div class="panel panel-default panel-pet">
+					<div class="panel-body">
+						<strong>Product Name</strong>: <span class="prod"> </span><br/>
+						<strong>Address</strong>: <span class = "address"> </span> <br/>
+						<strong>Review</strong>: <span class="review"> </span><br/>
+						<div style="display:none">
+						<strong>Review id</strong>: <span id="revId"> </span><br/>
+						</div>
+						<strong>UpVote</strong>: <span class="upVote"> </span><br/>
+						<strong>DownVote</strong>: <span class="downVote"> </span><br/>
+						<button class="btn btn-sm btn-success btn-upvote" type="button" data-attribute="0" data-id="0">Upvote</button>
+						<button class="btn btn-sm btn-danger btn-downvote" type="button" data-id="0">Downvote</button>
+					</div>
+				</div>
+		  </div>
+		</div>
+        <!-- JS Files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.0/web3.min.js" integrity="sha512-RGPKVfQewHGfk9yaB7ThGPKAQU+civS5awsfStLg22jrWbqgDkNzPtIwNFpFApr3ccjB730SRxi+KnDjhIuTpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/truffle-contract@4.0.31/dist/truffle-contract.js"></script>
+        <script src="js/app1.js"></script>
+    </body>
+</html>
