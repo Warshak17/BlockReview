@@ -1,0 +1,19 @@
+{
+  "name": "block1",
+  "version": "1.0.0",
+  "description": "var productReview = artifacts.require(\"ProductReview\");\r var PRToken = artifacts.require(\"PRToken\");\r module.exports = function(deployer){\r     deployer.deploy(PRToken, 100).then( function(){\r     \treturn deployer.deploy(productReview,PRToken.address);\r     });\r };",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
